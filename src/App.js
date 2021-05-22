@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+const App = () => {
   return (
     <div>
       <h1>FluxGen Weather App</h1>
     </div>
-  );
+  )
 }
 
 export default App;
