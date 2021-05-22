@@ -1,9 +1,15 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+
+import Main from './components/Main';
 
 const App = () => {
   return (
     <div>
-      <h1>FluxGen Weather App</h1>
+      <BrowserRouter>
+          <Main />
+      </BrowserRouter>
     </div>
   )
 }
