@@ -1,3 +1,3 @@
-export const navWidth = 250;
+export const navWidth = 220;
 
 export const navHeight= 67;

@@ -1,26 +1,27 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core';
+import {Paper, InputBase, Typography,Button} from '@material-ui/core';
 
-import {navWidth, navHeight} from '../shared/dimension';
+import SearchIcon from '@material-ui/icons/Search';
+import WbSunnyIcon from '@material-ui/icons/WbSunny'
 
-const useStyles = makeStyles((theme) => ({
-  main:{
-      paddingTop: navHeight
-  },
-  [theme.breakpoints.up("sm")]:{
-    main:{
-    paddingLeft: navWidth,
-    paddingTop: navHeight
-  }
-  }
-}));
+import useStyles from './styles';
 
 const Home = () => {
-
   const classes= useStyles();
   return (
     <div className={classes.main}>
-      <h1>Home</h1>
+          <Paper component="form" className={classes.paper} elevation={2}>
+            <SearchIcon className={classes.iconBtn}/>
+            <InputBase className={classes.input}
+            placeholder="Enter City..."
+            inputProps={{ 'aria-label': 'search google maps' }}/>
+          </Paper>
+  
+          <Button className={classes.searchBtn} variant="contained" color="secondary">
+            <WbSunnyIcon className={classes.icnBtn}/>
+            <Typography className={classes.getText}>Get Weather</Typography>
+          </Button>
+        
     </div>
   )
 }

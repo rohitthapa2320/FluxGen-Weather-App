@@ -24,21 +24,25 @@ const Sidebar = () => {
               <ListItemText primary="Home" />
             </ListItem>
           </NavLink>
+          <Divider />
           <NavLink className={classes.navLink}  to="/services">
             <ListItem button>
                 <ListItemText primary="Services" />
             </ListItem>
-          </NavLink>       
+          </NavLink> 
+          <Divider />     
           <NavLink className={classes.navLink}  to="/about">
             <ListItem button>
                 <ListItemText primary="About" />
             </ListItem>
           </NavLink>
+          <Divider />
           <NavLink className={classes.navLink}  to="/contact">
             <ListItem button>
                 <ListItemText primary="Contact" />
             </ListItem>
           </NavLink>
+          <Divider />
     </List>
     </>
 
@@ -65,7 +69,7 @@ const Sidebar = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h5" className={classes.title}>
-            FluxGen Weather-App
+            FluxGen Weather
           </Typography>
         </Toolbar>
       </AppBar>

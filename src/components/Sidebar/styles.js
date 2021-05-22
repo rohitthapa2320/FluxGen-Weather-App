@@ -1,18 +1,19 @@
-import {makeStyles} from '@material-ui/core';
+import {makeStyles} from '@material-ui/core/styles';
 import {navWidth, navHeight} from '../shared/dimension';
 
 export default  makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   menuBtn: {
-    marginRight: theme.spacing(2),
+    marginRight: 32,
     [theme.breakpoints.up("sm")]:{
       display: "none"
     }
   },
   title: {
     flexGrow: 1,
+    fontWeight: 'bolder'
   },
   drawer:{
     width: navWidth
