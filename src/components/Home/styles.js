@@ -27,6 +27,9 @@ export default makeStyles((theme) => ({
   getText:{
     padding: 4
   },
+  divider:{
+    height: 36
+  },
   searchBtn:{
     display: 'flex',
     alignItems: 'center',

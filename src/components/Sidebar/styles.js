@@ -25,6 +25,7 @@ export default  makeStyles((theme) => ({
   },
   appBar: {
     height: navHeight,
+    backgroundColor: 'black',
     [theme.breakpoints.up("sm")]:{
       width: `calc(100% - ${navWidth}px)`,
       height: navHeight
